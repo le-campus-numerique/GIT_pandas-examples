@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 __author__ = 'Who ?'
 
+author == Solange
+
 import pandas as pd
 
 # Load users info
