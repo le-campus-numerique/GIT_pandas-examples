@@ -1,6 +1,6 @@
-* -*- coding: utf-8 -*-
+"* -*- coding: utf-8 -*-"
 
-__message to author__ = 'solvethisconflict!'
+"__message to author__ = 'solvethisconflict!'"
 
 import pandas as pd
 import numpy as np
@@ -25,7 +25,7 @@ mergeRatings = pd.merge(pd.merge(users, ratings), movies)
 
 
 def cloneDF(df):
-    return pd.DataFrame(df.values.copy(), df.index.copy(), df.columns.copy()).convert_objects(convert_numeric=True)
+    return pd.DataFrame(df.values.copy(), df.index.copy(), df.columns.copy()).apply(pd.to_numeric, errors='coerce')
 
 
 # Show Films with more votes. (groupby + sorted)
