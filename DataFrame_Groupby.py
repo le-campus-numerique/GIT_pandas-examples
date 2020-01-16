@@ -1,10 +1,5 @@
 * -*- coding: utf-8 -*-
-__author__ = 'AntoineLegrain3'
-__errorman__ = 'ME'
-you shall not pass
-
-=======
-
+__message to Solange__ = 'solvethisconflict'
 
 import pandas as pd
 import numpy as np
