@@ -1,8 +1,7 @@
 * -*- coding: utf-8 -*-
 
-__message to Solange__ = 'solvethisconflict!'
-"is this really solved?"
-edited
+__author__ = 'Antoine'
+#Stop messing with my name
 
 import pandas as pd
 import numpy as np
