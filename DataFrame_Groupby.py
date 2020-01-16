@@ -1,6 +1,11 @@
 "* -*- coding: utf-8 -*-"
 
+<<<<<<< HEAD
 "__message to author__ = 'solvethisconflict!'"
+=======
+__author__ = 'Antoine'
+#Stop messing with my name
+>>>>>>> origin
 
 import pandas as pd
 import numpy as np
