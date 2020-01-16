@@ -1,5 +1,6 @@
-# -*- coding: utf-8 -*-
-__author__ = 'Who ?'
+* -*- coding: utf-8 -*-
+
+__message to author__ = 'solvethisconflict!'
 
 import pandas as pd
 import numpy as np
