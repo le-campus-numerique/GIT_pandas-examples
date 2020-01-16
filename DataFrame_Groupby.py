@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 __author__ = 'AntoineLegrain2'
+__errorman__ = 'ME'
 
 import pandas as pd
 import numpy as np
