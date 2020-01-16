@@ -1,10 +1,6 @@
 # -*- coding: utf-8 -*-
 <<<<<<< HEAD
-__author__ = 'AntoineLegrain3'
-=======
-__author__ = 'AntoineLegrain2'
-__errorman__ = 'ME'
->>>>>>> 5d5ea8b131b7ada390deda804a0bf50ed391583a
+__author__ = 'AntoineLegrain'
 
 import pandas as pd
 import numpy as np
