@@ -1,5 +1,6 @@
 * -*- coding: utf-8 -*-
-__message to Solange__ = 'solvethisconflict'
+
+__message to Solange__ = 'solvethisconflict!'
 "is this really solved?"
 edited
 
