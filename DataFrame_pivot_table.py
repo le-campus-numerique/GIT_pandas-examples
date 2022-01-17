@@ -1,20 +1,21 @@
 # -*- coding: utf-8 -*-
-__author__ = 'Who ?'
+__author__ = 'Adrien'
 
 import pandas as pd
 import numpy as np
 
 # Load Data
-userHeader = ['user_id', 'gender', 'age', 'ocupation', 'zip']
-users = pd.read_csv('dataSet/users.txt', engine='python',
-                    sep='::', header=None, names=userHeader)
+src = '/home/dataplus/Cozy Drive/CampusNum/Git/gitColab/'
+header = ['user_id', 'gender', 'age', 'ocupation', 'zip']
+users = pd.read_csv(src + 'dataSet/users.txt', engine='python',
+                    sep='::', header=None, names=header)
 
 movieHeader = ['movie_id', 'title', 'genders']
-movies = pd.read_csv('dataSet/movies.txt', engine='python',
+movies = pd.read_csv(src + 'dataSet/movies.txt', engine='python',
                      sep='::', header=None, names=movieHeader)
 
 ratingHeader = ['user_id', 'movie_id', 'rating', 'timestamp']
-ratings = pd.read_csv('dataSet/ratings.txt', engine='python',
+ratings = pd.read_csv(src + 'dataSet/ratings.txt', engine='python',
                       sep='::', header=None, names=ratingHeader)
 
 # Merge data
