@@ -1,6 +1,10 @@
 # -*- coding: utf-8 -*-
 __author__ = 'Raphaël'
 
+'''
+This is a random string addeed by Noemi
+'''
+
 import pandas as pd
 import numpy as np
 
