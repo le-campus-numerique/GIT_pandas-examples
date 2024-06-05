@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 __author__ = 'Who ?'
-
+#test 
 import pandas as pd
 import numpy as np
 
@@ -8,7 +8,6 @@ import numpy as np
 userHeader = ['user_id', 'gender', 'age', 'ocupation', 'zip']
 users = pd.read_csv('dataSet/users.txt', engine='python',
                     sep='::', header=None, names=userHeader, encoding='ISO-8859-1')
-
 movieHeader = ['movie_id', 'title', 'genders']
 movies = pd.read_csv('dataSet/movies.txt', engine='python',
                      sep='::', header=None, names=movieHeader, encoding='ISO-8859-1')
@@ -60,7 +59,15 @@ print('\n==================================================================\n')
 
 
 # Sort data ratings by created field (groupby + lambda function + sorted)
-sortRatingsField = cloneDF(mergeRatings)
-sortRatingsField = sortRatingsField.groupby(['movie_id', 'title'])['rating'].agg(
-    COUNT=np.size, myAVG=lambda x: x.sum() / float(x.count())).sort('COUNT', ascending=False)
-print('My info sorted: \n%s' % sortRatingsField[:15])
+sortRatingsField5 = cloneDF(mergeRatings)
+sortRatingsField5= sortRatingsField5.groupby(['movie_id', 'title'])['rating'].agg(
+    COUNT=np.size, myAVG=lambda x: x.sum() / float(x.count())).sort_values('COUNT', ascending=False)
+print('My info sorted: \n%s' % sortRatingsField5[:15])
+
+def selection_sort(input_list):
+    for idx in range(len(input_list)):
+        min_idx = idx
+        for j in range( idx +1, len(input_list)):
+            if input_list[min_idx] > input_list[j]:
+                min_idx = j
+        input_list[idx], input_list[min_idx] = input_list[min_idx], input_list[idx]
