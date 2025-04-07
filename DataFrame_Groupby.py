@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-__author__ = 'Who ?'
-
+__author__ = 'Barb'
 import pandas as pd
+
 import numpy as np
 
 # Load Data
@@ -39,8 +39,16 @@ print('\n==================================================================\n')
 # Show avg ratings movie (groupby + avg)
 avgRatings = cloneDF(mergeRatings)
 avgRatings = avgRatings.groupby(['movie_id', 'title']).mean()
+avgRatings['rating_column'] = avgRatings['rating_column'].fillna(0)
+avgRatings = avgRatings.dropna(subset=['rating_column'])
+print(avgRatings.dtypes)
+avgRatings['rating_column'] = pd.to_numeric(avgRatings['rating_column'], errors='coerce')
+numeric_columns = avgRatings.select_dtypes(include=['number'])
 print('Avg ratings: \n%s' % avgRatings['rating'][:10])
 print('\n==================================================================\n')
+
+
+
 
 
 # Show data ratings movies (groupby + several funtions)
