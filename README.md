@@ -18,3 +18,7 @@ For this example, I used the "MovieLens" data set that contains information of u
 $ pip install pandas
 $ pip install numpy
 ```
+
+Quel est le comble pour un marin ?
+
+Avoir le nez qui coule !
